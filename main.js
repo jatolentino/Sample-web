@@ -17,7 +17,6 @@ function timer() {
     if(min === 60){
         ms, sec, mins = 0;
     }
-
     //Doing some string interpolation
     let millis = ms < 10 ? `0`+ ms : ms;
     let seconds = sec < 10 ? `0`+ sec : sec;
