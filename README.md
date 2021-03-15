@@ -1,2 +1,1 @@
-# A web sample
-This is an example ok
+# A web sample, the script start.sh enabled the server
