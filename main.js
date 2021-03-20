@@ -4,7 +4,6 @@ let mins = 0;
 let ms= 0;
 let sec = 0;
 
-
 function timer() {
     ms++;
     if(ms >= 100){
