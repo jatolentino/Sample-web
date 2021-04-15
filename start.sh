@@ -11,4 +11,4 @@ firewall-cmd --add-service=http
 firewall-cmd --add-port=$port/tcp
 firewall-cmd --reload
 echo "Hello World" > /var/www/html/index.html
-curl http://localhost:6052
+curl http://localhost:$port
