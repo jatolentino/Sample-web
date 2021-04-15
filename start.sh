@@ -2,6 +2,7 @@
 yum install -y policycoreutils-python-utils
 yum install -y httpd
 systemctl enable --now httpd
+echo "Which port you want to run your server in?"
 sed -i '/^Listen 80/a Listen 6052' /etc/httpd/conf/httpd.conf
 semanage port -a -t http_port_t -p tcp 6052
 systemctl restart httpd
