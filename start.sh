@@ -5,7 +5,7 @@ systemctl enable --now httpd
 echo "Which port you want to run your server in?"
 read $port
 sed -i '/^Listen 80/a Listen $port' /etc/httpd/conf/httpd.conf
-semanage port -a -t http_port_t -p tcp 6052
+semanage port -a -t http_port_t -p tcp $port
 systemctl restart httpd
 firewall-cmd --add-service=http
 firewall-cmd --add-port=6052/tcp
